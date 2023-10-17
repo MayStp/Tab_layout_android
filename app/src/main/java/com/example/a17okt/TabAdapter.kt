@@ -8,20 +8,19 @@ class TabAdapter (fm: FragmentManager) : FragmentPagerAdapter(fm, BEHAVIOR_RESUM
 {
     override fun getItem(position: Int): Fragment {
         return when (position) {
-            0 -> HomeFragment()
-            1 -> MateriFragment()
-            2 -> QuizFragment()
+            0 -> RegisterFragment()
+            1 -> LoginFragment()
+
             else -> throw IllegalArgumentException("Invalid tab position")
         }
     }
     override fun getCount(): Int {
-        return 3
+        return 2 //ganti jadi 2 kalo fragment nya 2
     }
     override fun getPageTitle(position: Int): CharSequence? {
         return when (position) {
-            0 -> "Home"
-            1 -> "Materi"
-            2 -> "Quiz"
+            0 -> "Register"
+            1 -> "Login"
             else -> null
         }
     }
