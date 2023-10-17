@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme._17Okt" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/yellow</item>
+    </style>
+
+
+
+<!--    Base application theme with action bar-->
+    <style name="Base.Theme.MyCourse.WithActionBar"
+        parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here, similar to the theme without
+        ActionBar. -->
+        <item name="colorPrimary">@color/yellow</item>
+    </style>
+    <!-- Themes that can be applied to the application or specific activities. -->
+    <style name="Theme.MyCourse"
+        parent="Base.Theme._17Okt" />
+    <style name="Theme.MyCourse.WithActionBar" parent="Theme.Material3.DayNight">
+         <item name="colorPrimary">@color/yellow</item>
+    </style>
+
+</resources>
